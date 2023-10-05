@@ -11,19 +11,19 @@ public class Persona {
 	
 	private final char HOMBRE = 'h';
 	
-	public Persona() {
+	public Persona(String dni) {
 		this.nombre = "";
 		this.edad = 0;
-		//this.dni = "";
+		this.dni = dni;
 		this.sexo = HOMBRE;
 		this.peso = 0;
 		this.altura = 0;
 	}
 	
-	public Persona(String nombre, int edad, char sexo) {
+	public Persona(String nombre, String dni, int edad, char sexo) {
 		this.nombre = nombre;
 		this.edad = edad;
-		//this.dni = "";
+		this.dni = dni;
 		this.sexo = sexo;
 		this.peso = 0;
 		this.altura = 0;
